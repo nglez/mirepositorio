@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+    </head>
+    <body>
+	
+        <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript">
+
+    // Wait for Cordova to load
+    //
+	
+	
+	
+	 document.addEventListener("deviceready", onDeviceReady, false);
+    
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+		
+		window.setTimeout(muestraUrl,3000);
+		muestraUrl();
+		
+    }
+	
+	function muestraUrl(){
+
+			//var ref = window.open('https://www.agrofreshinformationcenter.com', '_self', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no');
+			window.location.replace ('https://www.agrofreshinformationcenter.com');
+			ref.addEventListener('exit', function() {navigator.app.exitApp(); });
+		
+		
+	}
+	
+
+   
+
+    </script>
+    </body>
+</html>
